@@ -62,6 +62,7 @@ Below are the top/bottom five most numerous types of images ...
 ![alt text][image3]
 
 As well as a bar graph with the number of occurances against the class id of the images
+
 ![alt text][image1]
 ###Design and Test a Model Architecture
 
