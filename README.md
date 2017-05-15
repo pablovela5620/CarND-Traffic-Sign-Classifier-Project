@@ -113,8 +113,8 @@ A total of 20 epochs were chosen as a higher number resulted in no significant i
 ####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* validation set accuracy of 0.953 
-* test set accuracy of 0.936
+* validation set accuracy of 0.947 
+* test set accuracy of 0.926
 
 If a well known architecture was chosen:
 * What architecture was chosen?
@@ -127,7 +127,7 @@ If a well known architecture was chosen:
     very well on classifying other images such as german traffic signs
 * How does the final model's accuracy on the validation and test set provide evidence that the model is working well?
 
-with a 95.3% validation set and 93.6% test set accuracy I believe this provides solid evidence that the model performs well
+    The model had a 95.3% validation set and 93.6% test set accuracy I believe this provides solid evidence that the model performs well
  
 
 ###Test a Model on New Images
@@ -152,24 +152,24 @@ Here are the results of the prediction:
 | Slippery Road  		| Slippery Road									|
 | Pedestrians			| General caution								|
 | 60 km/h	      		| 60 km/h					 			    	|
-| 70 km/h			    | 20 km/h      					       	    	|
+| 70 km/h			    | 70 km/h      					       	    	|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 80%. 
+Compared to the accuracy results of the test set, the are much relatively accurate.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is very sure that this is a stop sign (probability of 0.99), and the image does contain a stop sign. The top five soft max probabilities were
+For the new images, the model top softmax probability can be seen in the table below
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .99         			| Stop sign   									| 
-| .83     				| Slipper Road									|
-| .89					| General caution								|
-| .53	      			| 60 km/h					 				    |
-| .84				    | 20 km/h    							        |
+| .98         			| Stop sign   									| 
+| .99     				| Slipper Road									|
+| .73					| General caution								|
+| .49	      			| 60 km/h					 				    |
+| .45				    | 70 km/h    							        |
 
 
-For the second image ... 
+A bar graph for each individual image and their softmax probabilities can be found in code cell 24 in the Traffic Sign Classifer IPython Notebook
